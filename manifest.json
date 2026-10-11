@@ -1,0 +1,8 @@
+{
+  "name": "ORIS event list filter",
+  "short_name": "ORIS",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "icons": [{ "src": "icon.png", "sizes": "180x180", "type": "image/png" }]
+}

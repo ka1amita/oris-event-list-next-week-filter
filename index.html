@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>This week</title>
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="manifest" href="manifest.json">
+<script>
+const fmt = d => d.toLocaleDateString('sv'); // local YYYY-MM-DD
+const from = new Date();
+const to = new Date(from);
+to.setDate(from.getDate() + (7 - from.getDay()) % 7); // days until Sunday; 0 if today is Sunday
+location.replace(`https://oris.ceskyorientak.cz/?date_from=${fmt(from)}&date_to=${fmt(to)}&repre=0&sport=0&reg=0&all=1&mode=map&notcanc=1`);
+</script>
